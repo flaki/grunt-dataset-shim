@@ -19,14 +19,14 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-dataset-shim');
 ```
 
-## The "dataset_shim" task
+## The "dataset-shim" task
 
 ### Overview
-In your project's Gruntfile, add a section named `dataset_shim` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `dataset-dhim` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  dataset_shim: {
+  'dataset_shim': {
     options: {
       // Task-specific options go here.
     },
@@ -58,7 +58,7 @@ In this example, the default options are used to do something with whatever. So 
 
 ```js
 grunt.initConfig({
-  dataset_shim: {
+  'dataset_shim': {
     options: {},
     files: {
       'dest/out.js': ['src/one.js', 'src/two.js'],
@@ -72,11 +72,11 @@ In this example, custom options are used to do something else with whatever else
 
 ```js
 grunt.initConfig({
-  dataset_shim: {
+  'dataset_shim': {
     options: {
     },
     files: {
-      'dest/datase_runtime.js': [],
+      'dest/dataset_runtime.js': [],
     },
   },
 });

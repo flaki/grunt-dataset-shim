@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 	// Transpile lib
 	var transpile = require('dataset-transpiler');
 
-  grunt.registerMultiTask('dataset_shim', 'Replace .dataset object accesses in your JavaScript files with backwards-compatible Data.(set|get) calls.', function() {
+  grunt.registerMultiTask('dataset-shim', 'Replace .dataset object accesses in your JavaScript files with backwards-compatible Data.(set|get) calls.', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       runtime: false,
