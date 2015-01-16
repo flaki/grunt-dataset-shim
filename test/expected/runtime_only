@@ -1,0 +1,2 @@
+var Data=(function(){function _p2a(p){return 'data-'+(p.replace(/([A-Z])/g,'-$1')).toLowerCase();};function _a2p(a){return a.replace(/^data\-([a-z0-9\-]+)/,'$1').replace(/\-([a-z0-9])/g,function(r,m){return m.toUpperCase()})};return {"get":function (e,p){p=_p2a(p);if(e&&e.getAttribute){return e.hasAttribute(p)?e.getAttribute(p):void 0}},"set":function (e,p,v){p=_p2a(p);if(e&&e.setAttribute){e.setAttribute(p,v);return v}}}})();
+

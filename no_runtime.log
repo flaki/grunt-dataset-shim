@@ -1,0 +1,41 @@
+{
+  "nameArgs": "dataset_shim:no_runtime",
+  "name": "dataset_shim",
+  "args": [],
+  "flags": {},
+  "errorCount": 0,
+  "target": "no_runtime",
+  "data": {
+    "options": {
+      "runtime": false
+    },
+    "files": {
+      "tmp/no_runtime": [
+        "test/fixtures/script_complex.js"
+      ]
+    }
+  },
+  "files": [
+    {
+      "src": [
+        "test/fixtures/script_complex.js"
+      ],
+      "dest": "tmp/no_runtime",
+      "orig": {
+        "src": [
+          "test/fixtures/script_complex.js"
+        ],
+        "dest": "tmp/no_runtime"
+      }
+    }
+  ],
+  "filesSrc": [
+    "test/fixtures/script_complex.js"
+  ]
+}Data.set( el, "prop", "val" );
+var propvar = Data.get( el, "prop" );
+Data.set( document.querySelector("body"), "prop", "val" );
+Data.set( document.body["firstChild"].children[0].lastChild, "prop", "n" );
+Data.get( elem, "foo" );
+Data.set( document.querySelector("body"), "foo"+8+"bar", "val" );
+Data.set( elem, "prop", "complicated" + (function(){ return "function-call"})() + 3*(foo + 5)*bar );

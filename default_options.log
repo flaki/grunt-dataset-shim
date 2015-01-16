@@ -1,0 +1,39 @@
+{
+  "nameArgs": "dataset_shim:default_options",
+  "name": "dataset_shim",
+  "args": [],
+  "flags": {},
+  "errorCount": 0,
+  "target": "default_options",
+  "data": {
+    "options": {},
+    "files": {
+      "tmp/default_options": [
+        "test/fixtures/script_complex.js"
+      ]
+    }
+  },
+  "files": [
+    {
+      "src": [
+        "test/fixtures/script_complex.js"
+      ],
+      "dest": "tmp/default_options",
+      "orig": {
+        "src": [
+          "test/fixtures/script_complex.js"
+        ],
+        "dest": "tmp/default_options"
+      }
+    }
+  ],
+  "filesSrc": [
+    "test/fixtures/script_complex.js"
+  ]
+}Data.set( el, "prop", "val" );
+var propvar = Data.get( el, "prop" );
+Data.set( document.querySelector("body"), "prop", "val" );
+Data.set( document.body["firstChild"].children[0].lastChild, "prop", "n" );
+Data.get( elem, "foo" );
+Data.set( document.querySelector("body"), "foo"+8+"bar", "val" );
+Data.set( elem, "prop", "complicated" + (function(){ return "function-call"})() + 3*(foo + 5)*bar );

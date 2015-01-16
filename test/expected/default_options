@@ -1,0 +1,7 @@
+Data.set( el, "prop", "val" );
+var propvar = Data.get( el, "prop" );
+Data.set( document.querySelector("body"), "prop", "val" );
+Data.set( document.body["firstChild"].children[0].lastChild, "prop", "n" );
+Data.get( elem, "foo" );
+Data.set( document.querySelector("body"), "foo"+8+"bar", "val" );
+Data.set( elem, "prop", "complicated" + (function(){ return "function-call"})() + 3*(foo + 5)*bar );

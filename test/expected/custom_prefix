@@ -1,0 +1,7 @@
+__DATASET_SHIM.set( el, "prop", "val" );
+var propvar = __DATASET_SHIM.get( el, "prop" );
+__DATASET_SHIM.set( document.querySelector("body"), "prop", "val" );
+__DATASET_SHIM.set( document.body["firstChild"].children[0].lastChild, "prop", "n" );
+__DATASET_SHIM.get( elem, "foo" );
+__DATASET_SHIM.set( document.querySelector("body"), "foo"+8+"bar", "val" );
+__DATASET_SHIM.set( elem, "prop", "complicated" + (function(){ return "function-call"})() + 3*(foo + 5)*bar );
