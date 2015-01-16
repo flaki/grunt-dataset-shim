@@ -22,7 +22,7 @@ grunt.loadNpmTasks('grunt-dataset-shim');
 ## The "dataset-shim" task
 
 ### Overview
-In your project's Gruntfile, add a section named `dataset-dhim` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `dataset-shim` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
@@ -54,8 +54,7 @@ The name of the global runtime object to be used when transpiling dataset proper
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
+Concatenates "one.js" and "two.js" source, and replaces all occurences of `.dataset` property accesses (both gets and sets) with Data.*() calls. By default, the transpiler does not prepend the runtime needed (the Data.* function definitions). You could do this by setting `runtime` to `true` in options, or can include it in a separate file (see below).
 ```js
 grunt.initConfig({
   'dataset-shim': {
@@ -68,8 +67,7 @@ grunt.initConfig({
 ```
 
 #### Specifying no source will just generate a runtime file
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
+If you specify no source files, the runtime itself will be exported in the specified destination file (~.4KB in size). You could then go on and insert it into your compiled sources as you wish.
 ```js
 grunt.initConfig({
   'dataset-shim': {
