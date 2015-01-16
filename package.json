@@ -1,7 +1,7 @@
 {
   "name": "grunt-dataset-shim",
   "description": "Replace .dataset object accesses in your JavaScript files with backwards-compatible Data.(set|get) calls.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "",
   "author": {
     "name": "Flaki",

@@ -26,7 +26,7 @@ In your project's Gruntfile, add a section named `dataset-dhim` to the data obje
 
 ```js
 grunt.initConfig({
-  'dataset_shim': {
+  'dataset-shim': {
     options: {
       // Task-specific options go here.
     },
@@ -58,7 +58,7 @@ In this example, the default options are used to do something with whatever. So 
 
 ```js
 grunt.initConfig({
-  'dataset_shim': {
+  'dataset-shim': {
     options: {},
     files: {
       'dest/out.js': ['src/one.js', 'src/two.js'],
@@ -72,7 +72,7 @@ In this example, custom options are used to do something else with whatever else
 
 ```js
 grunt.initConfig({
-  'dataset_shim': {
+  'dataset-shim': {
     options: {
     },
     files: {
@@ -86,4 +86,5 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+* 0.1.1 - fixed taskname: `dataset-shim` (2015.01.16)
 * 0.1.0 - initial release (2015.01.16)
