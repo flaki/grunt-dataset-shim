@@ -47,7 +47,7 @@ Prepend the runtime functions to the begining of the concatenated transpiled sou
 
 #### options.runtimePrefix
 Type: `String`
-Default value: `Data`
+Default value: `"Data"`
 
 The name of the global runtime object to be used when transpiling dataset property accesses into `RuntimePrefix.(get|set)` calls.
 
