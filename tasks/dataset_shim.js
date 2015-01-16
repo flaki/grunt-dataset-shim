@@ -54,7 +54,6 @@ module.exports = function(grunt) {
 
 				// Transpile
 				src = transpile( src, options.runtime, options.runtimePrefix );
-				grunt.file.write(session.target+'.log', JSON.stringify(session, null, 2)+src);
 
 				// Write the destination file.
 				grunt.file.write(f.dest, src);
